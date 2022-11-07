@@ -16,6 +16,7 @@ const App = observer((): JSX.Element => {
   const globalStore = useGlobalStore()
   const { dateString, month, day } = useMemo(() => {
     const currentDate = new Date()
+
     return {
       dateString: currentDate.toLocaleString('default', { weekday: 'long', day: 'numeric', year: 'numeric', month: 'long' }),
       month: currentDate.getMonth() + 1,

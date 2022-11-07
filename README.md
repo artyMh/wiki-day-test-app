@@ -12,3 +12,8 @@
 * React 18
 * MobX
 * TypeScript + ESLint
+
+## Room for improvements
+
+* Add cards components virtualization
+* Add possibility to choose day

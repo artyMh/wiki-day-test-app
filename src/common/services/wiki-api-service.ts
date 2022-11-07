@@ -10,10 +10,12 @@ export default class WikiApiService {
     try {
       const response = await fetch(url, { cache: 'default' })
       const body = await response.json() as WikiOnThisDayResponse
-      console.log('RESPONSE', body)
+
       return body
     } catch (e) {
+      // eslint-disable-next-line no-console
       console.error('ERROR', e)
+
       return {} as WikiOnThisDayResponse
     }
   }

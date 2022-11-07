@@ -5,7 +5,6 @@ import { faCalendarAlt, faInfo, faLink } from '@fortawesome/free-solid-svg-icons
 import { WikiOnThisDayCard } from '../../models/wiki-on-this-day-card'
 import Modal from '../modal'
 
-import wikipediaLogo from '../../../assets/wikipedia-logo.svg'
 import './card.css'
 
 export type CardProps = WikiOnThisDayCard
