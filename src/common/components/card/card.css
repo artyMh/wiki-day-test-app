@@ -1,0 +1,86 @@
+.card-container {
+  height: 480px;
+  width: 360px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  animation: fade 0.3s;
+}
+
+.card-container::after {
+  content: "";
+  position: absolute;
+  z-index: 11;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0.2) 50%,rgb(0,0,0) 100%);
+}
+
+.card-container .card-container__image {
+  position: relative;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
+  min-height: 480px;
+  width: 100%;
+  transition: 0.25s;
+}
+
+.card-container:hover .card-container__image {
+  transition: 0.25s;
+  filter: brightness(0.7);
+}
+
+.card-container .card-container__content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 12;
+  padding: 16px;
+  color: white;
+}
+
+.card-container .card-container__info {
+  position: absolute;
+  top: 12px;
+  bottom: 0;
+  left: 16px;
+  z-index: 13;
+  color: white;
+  text-align: left;
+}
+
+.card-container .card-container__info svg {
+  width: 14px;
+  margin-right: 8px;
+}
+
+.card-container .card-container__info h4 {
+  margin: 0 !important;
+  padding-bottom: 4px
+}
+
+.card-container .card-container__info .more-info:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.card-container .card-container__info .wiki-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

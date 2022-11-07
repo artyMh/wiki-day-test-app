@@ -1,0 +1,20 @@
+.wiki-on-this-day-container {
+  
+}
+
+.wiki-on-this-day-container__categories {
+  padding-bottom: 58px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.wiki-on-this-day-container__events {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}

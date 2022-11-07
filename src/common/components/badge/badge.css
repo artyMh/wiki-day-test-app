@@ -1,0 +1,25 @@
+.badge-container {
+  padding: 4px 12px;
+  cursor: pointer;
+  border: 1px solid;
+  border-color: #1A2027;
+  border-radius: 15px;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.badge-container + .badge-container {
+  margin-left: 0.6em;
+}
+
+.badge-container_selected {
+  background-color: rgba(0, 0, 0, 0.2);
+  font-weight: 600;
+}
+
+.badge-container:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.badge-container svg {
+  margin-right: 8px;
+}
