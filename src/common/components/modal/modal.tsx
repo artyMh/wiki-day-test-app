@@ -38,7 +38,8 @@ const Modal = ({ show, onCloseButtonClick, title, children }: ModalProps): JSX.E
         </div>
       </div>
     </div>
-  , document.body)
+    , document.body
+  )
 }
 
 export default Modal

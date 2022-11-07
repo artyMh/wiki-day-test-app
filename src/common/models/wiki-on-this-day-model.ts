@@ -34,7 +34,7 @@ export interface WikiDayEventPage {
       revisions: string
       edit: string
       talk: string
-    },
+    }
     mobile: {
       page: string
       revisions: string
