@@ -1,0 +1,8 @@
+.error-fallback-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.error-fallback-container pre {
+  color: var(--light-red);
+}
