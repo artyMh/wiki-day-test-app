@@ -1,4 +1,4 @@
-import { useMemo, lazy } from 'react'
+import { useMemo, lazy, Suspense } from 'react'
 import { observer } from 'mobx-react-lite'
 
 import { useGlobalStore } from '../../common/store/global-store'
@@ -39,7 +39,13 @@ const MainPage = observer((): JSX.Element => {
       </p>
       {globalStore.wikiOnThisDayFetchStatus === FetchState.IDLE ? <Button onClick={getData}>Load data</Button> : null}
       {globalStore.wikiOnThisDayFetchStatus === FetchState.LOADING ? <Loader>Loading ...</Loader> : null}
-      {globalStore.wikiOnThisDayFetchStatus === FetchState.SUCCESS ? <WikiOnThisDay wikiOnThisDayEvents={globalStore.wikiOnThisDayCards}></WikiOnThisDay> : null}
+      {globalStore.wikiOnThisDayFetchStatus === FetchState.SUCCESS
+        ? (
+          <Suspense fallback={<Loader>Loading events...</Loader>}>
+            <WikiOnThisDay wikiOnThisDayEvents={globalStore.wikiOnThisDayCards}></WikiOnThisDay>
+          </Suspense>
+        )
+        : null}
     </div>
   )
 })
