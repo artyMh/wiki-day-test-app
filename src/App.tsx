@@ -16,7 +16,7 @@ const App = (): JSX.Element => {
         FallbackComponent={ErrorFallback}
         onReset={resetPage}
       >
-        <MainPage></MainPage>
+        <MainPage />
       </ErrorBoundary>
     </div>
   )

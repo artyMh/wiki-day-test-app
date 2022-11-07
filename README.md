@@ -8,10 +8,11 @@
 
 ## Stack
 
-* Vite
-* React 18
-* MobX
 * TypeScript + ESLint
+* Vite
+* React
+* MobX
+* Vitest + React Testing Library
 
 ## Room for improvements
 

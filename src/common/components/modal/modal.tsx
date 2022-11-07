@@ -4,7 +4,7 @@ import Button from '../button'
 
 import './modal.css'
 
-type ModalProps = {
+export type ModalProps = {
   show: boolean
   onCloseButtonClick: () => void
   title: string
@@ -23,9 +23,8 @@ const Modal = ({ show, onCloseButtonClick, title, children }: ModalProps): JSX.E
 
   document.body.style.overflowY = 'hidden'
 
-  // TODO: set <body></body> overflow-y: hidden on modal work phase
   return ReactDOM.createPortal(
-    <div className="modal-container">
+    <div role="dialog" className="modal-container">
       <div className="modal-container__modal">
         <div className="modal-container__modal-header">
           <h3>{title}</h3>

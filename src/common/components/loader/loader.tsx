@@ -8,7 +8,7 @@ export type LoaderProps = {
 }
 
 const Loader = ({ children }: LoaderProps): JSX.Element => (
-  <div className="loader-container">
+  <div role="spinbutton" className="loader-container">
     <FontAwesomeIcon icon={faSpinner} className="spinner" />
     <span className="loader-container__text">{children}</span>
   </div>

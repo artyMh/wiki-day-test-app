@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "test": "vitest",
     "preview": "vite preview",
     "lint": "eslint --ext ts,tsx ./src"
   },
@@ -25,6 +26,8 @@
     "react-error-boundary": "^3.1.4"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.41.0",
@@ -35,9 +38,11 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-react": "^7.31.10",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "jsdom": "^20.0.2",
     "typescript": "^4.6.4",
     "vite": "^3.1.0",
     "vite-plugin-eslint": "^1.8.1",
-    "vite-tsconfig-paths": "^3.5.2"
+    "vite-tsconfig-paths": "^3.5.2",
+    "vitest": "^0.25.0"
   }
 }

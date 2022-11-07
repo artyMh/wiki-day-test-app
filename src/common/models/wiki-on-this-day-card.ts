@@ -1,7 +1,7 @@
 export interface WikiOnThisDayCard {
   title: string
   text: string
-  year: number
+  year: number | undefined
   imageUrl: string
   wikiUrl: string
 }

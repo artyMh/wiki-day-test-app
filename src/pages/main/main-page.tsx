@@ -35,7 +35,7 @@ const MainPage = observer((): JSX.Element => {
         {dateString}
       </p>
       <p className="gray-text">
-        Data from wikipedia official <a href="https://api.wikimedia.org/wiki/API_reference/Feed/On_this_day">API</a>
+        Data from wikipedia official <a className="link" href="https://api.wikimedia.org/wiki/API_reference/Feed/On_this_day">API</a>
       </p>
       {globalStore.wikiOnThisDayFetchStatus === FetchState.IDLE ? <Button onClick={getData}>Load data</Button> : null}
       {globalStore.wikiOnThisDayFetchStatus === FetchState.LOADING ? <Loader>Loading ...</Loader> : null}
