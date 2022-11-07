@@ -3,7 +3,6 @@ import { observer } from 'mobx-react-lite'
 
 import { useGlobalStore } from './common/store/global-store'
 import { FetchState } from './common/models/fetch-state'
-
 import Button from './common/components/button'
 import Loader from './common/components/loader'
 import Modal from './common/components/modal'

@@ -2,9 +2,10 @@ import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBirthdayCake, faBookDead, faBell, faCheck, faGlassCheers } from '@fortawesome/free-solid-svg-icons'
 
+import type { WikiOnThisDayCards } from '../../common/models/wiki-on-this-day-card'
+
 import Badge from '../../common/components/badge'
 import Card from '../../common/components/card'
-import type { WikiOnThisDayCards } from '../../common/models/wiki-on-this-day-card'
 
 import './wiki-on-this-day.css'
 

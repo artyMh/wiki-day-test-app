@@ -1,10 +1,11 @@
 import { makeAutoObservable, runInAction } from 'mobx'
 import { createContext, useContext } from 'react'
 
-import WikiApiService from '../services/wiki-api-service'
-import { FetchState } from '../models/fetch-state'
 import type { WikiOnThisDayResponse } from '../models/wiki-on-this-day-model'
 import type { WikiOnThisDayCards } from '../models/wiki-on-this-day-card'
+
+import { FetchState } from '../models/fetch-state'
+import WikiApiService from '../services/wiki-api-service'
 import WikiParseService from '../services/wiki-parse-service'
 
 class GlobalStore {

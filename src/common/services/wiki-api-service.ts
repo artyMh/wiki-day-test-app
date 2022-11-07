@@ -1,4 +1,5 @@
 import { WikiOnThisDayResponse } from '../models/wiki-on-this-day-model'
+
 import { mockData } from './mock_data'
 
 export default class WikiApiService {

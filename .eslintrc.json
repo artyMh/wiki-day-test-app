@@ -97,31 +97,12 @@
             "ignoreParameters": true
           }
         ],
-        "@typescript-eslint/indent": [ "error", 2 ],
-    
-        "import/first": 2,
-        "import/no-duplicates": 2,
-        "import/newline-after-import": 2,
-        "import/export": 2,
-        "import/no-absolute-path": 2,
-        "import/no-cycle": 2,
-        "import/order": [ "error",
-          {
-            "groups": [
-              "builtin",
-              "external",
-              "type",
-              "internal",
-              "parent",
-              "sibling"
-            ],
-            "newlines-between": "always"
-          }
-        ]
+        "@typescript-eslint/indent": [ "error", 2 ]
       }
     }
   ],
   "rules": {
+    "@typescript-eslint/semi": [ "error", "never" ],
     "semi": "off",
     "quotes": "off",
     "indent": "off",
@@ -148,6 +129,26 @@
     "react/jsx-key": "warn",
     "react/react-in-jsx-scope": "off",
     "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn"
+    "react-hooks/exhaustive-deps": "warn",
+
+    "import/first": 2,
+    "import/no-duplicates": 2,
+    "import/newline-after-import": 2,
+    "import/export": 2,
+    "import/no-absolute-path": 2,
+    "import/no-cycle": 2,
+    "import/order": [ "error",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "type",
+          "internal",
+          "parent",
+          "sibling"
+        ],
+        "newlines-between": "always"
+      }
+    ]
   }
 }
