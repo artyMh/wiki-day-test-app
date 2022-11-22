@@ -44,7 +44,7 @@
   bottom: 0;
   z-index: 12;
   padding: 16px;
-  /* color: white; */
+  color: white;
 }
 
 .card-container .card-container__content {
