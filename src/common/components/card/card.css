@@ -44,7 +44,7 @@
   bottom: 0;
   z-index: 12;
   padding: 16px;
-  color: white;
+  /* color: white; */
 }
 
 .card-container .card-container__content {
@@ -57,7 +57,6 @@
   bottom: 0;
   left: 16px;
   z-index: 13;
-  color: white;
   text-align: left;
 }
 
@@ -66,9 +65,12 @@
   margin-right: 8px;
 }
 
-.card-container .card-container__info h4 {
+.card-container .card-container__info h4, a {
+  color: white;
   margin: 0 !important;
-  padding-bottom: 4px
+  padding-bottom: 4px;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .card-container .card-container__info .more-info:hover {
