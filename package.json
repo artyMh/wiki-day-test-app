@@ -11,8 +11,8 @@
     "lint": "eslint --ext ts,tsx ./src"
   },
   "engines": {
-    "node": ">= 16.18.0",
-    "npm": ">= 8.19.2"
+    "node": ">= 20.9.0",
+    "npm": ">= 10.1.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
