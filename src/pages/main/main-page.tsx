@@ -1,4 +1,4 @@
-import { useMemo, lazy, Suspense } from 'react'
+import { lazy, Suspense } from 'react'
 import { observer } from 'mobx-react-lite'
 
 import { useGlobalStore } from '../../common/store/global-store'

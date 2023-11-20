@@ -4,7 +4,7 @@ import './badge.css'
 
 export type BadgeProps = {
   isSelected?: boolean
-  children: any
+  children: JSX.Element
   onClick?: () => void
 }
 

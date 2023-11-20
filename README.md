@@ -3,7 +3,7 @@
 ## How to launch
 
 * Install dependencies `npm i`
-* Development mode `npm run dev`
+* Development mode `npm run start:dev`
 * Production mode `npm run build && npm run preview`
 
 ## Stack
