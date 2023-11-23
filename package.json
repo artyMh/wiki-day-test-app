@@ -1,8 +1,9 @@
 {
-  "name": "wiki-test-app",
+  "name": "wiki-day-test-app",
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "license": "MIT",
   "scripts": {
     "start:dev": "vite",
     "build": "tsc && vite build",
@@ -11,8 +12,8 @@
     "lint": "eslint --ext ts,tsx ./src"
   },
   "engines": {
-    "node": ">= 20.9.0",
-    "npm": ">= 10.1.0"
+    "node": "20.9.0",
+    "npm": "10.1.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
