@@ -17,4 +17,7 @@ const vitestConfig: VitestUserConfigInterface = {
 export default defineConfig({
   test: vitestConfig.test,
   plugins: [react(), tsconfigPaths(), eslint()],
+  server: {
+    port: 3000
+  },
 })

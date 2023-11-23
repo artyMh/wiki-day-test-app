@@ -4,6 +4,6 @@ COPY ./ /usr/local/app/
 RUN npm install
 RUN npm run build
 
-FROM nginx:1.21.0
-COPY --from=build /usr/local/app/dist/feature-toggle-app /usr/share/nginx/html
-EXPOSE 80
+FROM nginx:1.23.4
+COPY --from=build /usr/local/app/dist /usr/share/nginx/html
+EXPOSE 3000
