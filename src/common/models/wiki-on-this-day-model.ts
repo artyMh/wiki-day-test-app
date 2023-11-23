@@ -1,17 +1,20 @@
 export interface WikiDayEventPage {
   type: 'standard' | 'disambiguation' | 'no-extract' | 'mainpage'
   namespace: {
-    id: string
+    id: number
     text: string
   }
   wikibase_item: string
+  title: string
+  displaytitle: string
+  normalizedtitle: string
   titles: {
     canonical: string
     normalized: string
     display: string
   }
   pageid: number
-  thumbnail: {
+  thumbnail?: {
     source: string
     width: number
     height: number
@@ -44,6 +47,10 @@ export interface WikiDayEventPage {
   }
   extract: string
   extract_html: string
+  coordinates?: { 
+    lat: number
+    lon: number
+  }
 }
 
 export interface WikiDayEvent {

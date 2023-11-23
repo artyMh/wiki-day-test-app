@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBirthdayCake, faBookDead, faBell, faCheck, faGlassCheers } from '@fortawesome/free-solid-svg-icons'
 
 import type { WikiOnThisDayCards } from '../../common/models/wiki-on-this-day-card'
@@ -16,30 +15,34 @@ export type WikiOnThisDayProps = {
 }
 
 const WikiOnThisDay = ({ wikiOnThisDayEvents }: WikiOnThisDayProps): JSX.Element => {
-  const { selected, births, deaths, events, holidays } = wikiOnThisDayEvents
   const [ selectedCategory, setSelectedCategory ] = useState<SelectedCategory>('selected')
+  const { selected, births, deaths, events, holidays } = wikiOnThisDayEvents
+
+  const setCategory = (category: SelectedCategory) => () => {
+    setSelectedCategory(category)
+  }
 
   return (
     <div className="wiki-on-this-day-container">
       <div className="wiki-on-this-day-container__categories">
         {selected.length > 0
-          ? <Badge isSelected={selectedCategory === 'selected'} onClick={() => setSelectedCategory('selected')}><FontAwesomeIcon icon={faCheck}/>Selected</Badge>
+          ? <Badge isSelected={selectedCategory === 'selected'} icon={faCheck} onClick={setCategory('selected')}>Selected</Badge>
           : null
         }
         {births.length > 0
-          ? <Badge isSelected={selectedCategory === 'births'} onClick={() => setSelectedCategory('births')}><FontAwesomeIcon icon={faBirthdayCake} />Births</Badge>
+          ? <Badge isSelected={selectedCategory === 'births'} icon={faBirthdayCake} onClick={setCategory('births')}>Births</Badge>
           : null
         }
         {deaths.length > 0
-          ? <Badge isSelected={selectedCategory === 'deaths'} onClick={() => setSelectedCategory('deaths')}><FontAwesomeIcon icon={faBookDead} />Deaths</Badge>
+          ? <Badge isSelected={selectedCategory === 'deaths'} icon={faBookDead} onClick={setCategory('deaths')}>Deaths</Badge>
           : null
         }
         {events.length > 0
-          ? <Badge isSelected={selectedCategory === 'events'} onClick={() => setSelectedCategory('events')}><FontAwesomeIcon icon={faBell} />Events</Badge>
+          ? <Badge isSelected={selectedCategory === 'events'} icon={faBell} onClick={setCategory('events')}>Events</Badge>
           : null
         }
         {holidays.length > 0
-          ? <Badge isSelected={selectedCategory === 'holidays'} onClick={() => setSelectedCategory('holidays')}><FontAwesomeIcon icon={faGlassCheers} />Holidays</Badge>
+          ? <Badge isSelected={selectedCategory === 'holidays'} icon={faGlassCheers} onClick={setCategory('holidays')}>Holidays</Badge>
           : null
         }
       </div>
