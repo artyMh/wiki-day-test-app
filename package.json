@@ -6,6 +6,7 @@
   "license": "ISC",
   "scripts": {
     "start:dev": "vite",
+    "start:host": "vite --host",
     "build": "tsc && vite build",
     "test": "vitest",
     "preview": "vite preview",
