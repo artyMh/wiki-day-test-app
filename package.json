@@ -4,6 +4,10 @@
   "version": "1.0.0",
   "type": "module",
   "license": "ISC",
+  "author": {
+    "name": "artyMh",
+    "url": "https://github.com/artyMh"
+  },
   "scripts": {
     "start:dev": "vite",
     "start:host": "vite --host",
